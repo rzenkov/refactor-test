@@ -39,14 +39,14 @@
         PixelLog $pixel_log,
         PurchaseEventsProcessor $purchaseEventProcessor
     )
-	{
-		$this->pixel_log = $pixel_log;
+    {
+	$this->pixel_log = $pixel_log;
         $this->purchaseEventsProcessor = $purchaseEventProcessor;
-	}
+    }
 
 
-	public function parseDataLayerEvent()
-	{
+    public function parseDataLayerEvent()
+    {
 
         return $this->pиurchaseEventProcessor
             ->process($this->pixel_log);
