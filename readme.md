@@ -35,7 +35,7 @@
 В исходном классе изменим конструктор и целевой метод
 
 ```php
-	public function __construct(
+    public function __construct(
         PixelLog $pixel_log,
         PurchaseEventsProcessor $purchaseEventProcessor
     )
